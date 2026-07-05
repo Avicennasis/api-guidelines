@@ -34,7 +34,7 @@ Clients **SHOULD** be capable of using `max-age` and `max-stale` headers to excl
 
 ### Common Cache-Control Scenarios
 
-Most common scenarios for controlling the cache-ability of a response includes:
+Most common scenarios for controlling the cache-ability of a response include:
 
 1. Setting expiration and revalidation.
 2. Disabling the caching of a response. Refer to the [Cache-Control Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) for additional information.

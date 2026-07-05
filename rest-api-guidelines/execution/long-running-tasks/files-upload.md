@@ -1,6 +1,6 @@
 # Files Upload
 
-The upload of files using a REST API endpoint is a common practice. It implies certain concerns taht have to be addressed in the design phase of the API.
+The upload of files using a REST API endpoint is a common practice. It implies certain concerns that have to be addressed in the design phase of the API.
 
 The API Consumer performs a key role in this case. The MIME type in the Content-Type header of the request is an important factor for a successful operation. An operation that needs to upload binary files **SHOULD** uses a collection resource with the POST HTTP Request Method. When processing an existing resource the request message body **MUST** contain the right MIME type of the resources being processed.
 
@@ -37,7 +37,7 @@ It is recommended to upload the file alone, with no other content in the request
 - PDF -> application/pdf
 etc.
 
-It is also recommended to compress the file to be uploaded, then using these MIM types (examples):
+It is also recommended to compress the file to be uploaded, then using these MIME types (examples):
 
  - gzip -> application/gzip
  - zip -> application/zip
@@ -69,14 +69,14 @@ spring.http.multipart.max-request-size=128KB # the total request size for a mult
 
 ### Configure Properly all the Components
 
-Load tests should give you metrics about the average latency of the operations. Use these metrics to calcuate the best value for the timeout settings in the upstream/backend service.
+Load tests should give you metrics about the average latency of the operations. Use these metrics to calculate the best value for the timeout settings in the upstream/backend service.
 
-The API Gateway timeout settings have to be considered for the expected timeout values, aligned with the values in the upstream/backend service. Al other components in the infrastructure **MUST** be considered for the calculation of the final metrics.
+The API Gateway timeout settings have to be considered for the expected timeout values, aligned with the values in the upstream/backend service. All other components in the infrastructure **MUST** be considered for the calculation of the final metrics.
 git commit 
 ```
-|API Consumer/Client Timeout| --->  |External Load Balancer|  ---> |API Gateway Timeout|  --->  |Internal Load Balancer|   ---> |Upstream/Backend Service Tiemout|
+|API Consumer/Client Timeout| --->  |External Load Balancer|  ---> |API Gateway Timeout|  --->  |Internal Load Balancer|   ---> |Upstream/Backend Service Timeout|
 ```
 
-The approach based on too long timeout values is not acceptable. You **MUST** follow a fast-fail approach with a expected duration of the upload. If this time is exceeded a timeout error **SHOULD** be sent to the API Consumer. The maximum size limit **SHOULD** be consistent with the timeout value.
+The approach based on too long timeout values is not acceptable. You **MUST** follow a fast-fail approach with an expected duration of the upload. If this time is exceeded a timeout error **SHOULD** be sent to the API Consumer. The maximum size limit **SHOULD** be consistent with the timeout value.
 
 > Please also consider the client and API Gateway Timeout settings. In this case the lack of retrieval of a response during a too long upload operation can trigger a timeout error.

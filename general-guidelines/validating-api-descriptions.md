@@ -30,7 +30,7 @@ docker run --rm -it -v $(pwd):/tmp stoplight/spectral lint "/tmp/file.yaml"
 
 ## Using Spectral
 
-Once installed Spectral, you can validate an OAS file (in YAML or JSON format) according to a given set of rules. Spectral has a predefined set of rules validating OpenAPI 2.x (Swagger) and OpenAPI 3.x files.
+Once Spectral is installed, you can validate an OAS file (in YAML or JSON format) according to a given set of rules. Spectral has a predefined set of rules validating OpenAPI 2.x (Swagger) and OpenAPI 3.x files.
 
 Spectral comes with a CLI and can be run from your command line:
 

@@ -22,9 +22,9 @@
 
    6. Follow the [adidas API guidelines](https://adidas.gitbook.io/api-guidelines/introduction/readme)
    7. Verify the OAS file you have written passes the Spectral test.
-   8. Make sure the OAS file passes all adidas SwaggerHub style guide checks. A red banned will be showed at the bottom of the editor if something is wrong with the OAS content.
+   8. Make sure the OAS file passes all adidas SwaggerHub style guide checks. A red banner will be shown at the bottom of the editor if something is wrong with the OAS content.
    9. Review the API Design
-   10. Publish the version in Swagger Hub doing that inmmutable.
+   10. Publish the version in Swagger Hub doing that immutable.
 
 2. **Develop the API**
    1. Check out OAS file from Swagger Hub
@@ -79,7 +79,7 @@
    > Ensure you have all the operational context information:
       - Type of application
       - Servers
-      - Detailed ownership information (Organiational unit, API Owner, Support contact, etc)
+      - Detailed ownership information (Organizational unit, API Owner, Support contact, etc)
 
    > Ensure you have all the Non-Functional Requirements for your API like:
       - Caching strategy detailed for each endpoint
@@ -120,7 +120,7 @@
 
    1. Create a new version in Swagger Hub
    2. Follow the adidas API Guidelines for [**changes and versioning**](https://adidas.gitbook.io/api-guidelines/rest-api-guidelines/evolution/versioning)
-   3. Share with your skateholders the new version allow them write comments to reach a new agrenment
+   3. Share with your stakeholders the new version allow them write comments to reach a new agreement
    4. Avoid break current version follow the [**rules**](https://adidas.gitbook.io/api-guidelines/general-guidelines/rules-for-extending)
    5. After the API Design change is verified, reviewed and approved, continue with the "Develop the API" phase
    6. Make sure the CI/CD pipeline is set to run Dredd test in the CI/CD with the new version

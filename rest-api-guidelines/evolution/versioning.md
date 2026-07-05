@@ -29,9 +29,9 @@ Adding a new action to existing resource with identifier `/greeting` doesn't cha
 
 ## Backward-incompatible Changes
 
-A change to _resource identifier_, _resource metadata_, _resource actions_ and _resource relations_ that can't follow the [Rules for Extending](../../general-guidelines/rules-for-extending.md) **MUST** result into a **new resource variant**. Existing resource variant **MUST** be preserved.
+A change to _resource identifier_, _resource metadata_, _resource actions_ and _resource relations_ that can't follow the [Rules for Extending](../../general-guidelines/rules-for-extending.md) **MUST** result in a **new resource variant**. Existing resource variant **MUST** be preserved.
 
-A change to _representation format_ **SHOULD NOT** result into a new resource variant.
+A change to _representation format_ **SHOULD NOT** result in a new resource variant.
 
 #### Example
 

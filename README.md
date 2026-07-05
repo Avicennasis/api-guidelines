@@ -75,7 +75,7 @@ If you want to contact adidas API Team regarding these guidelines, you can mail 
 
 This project is intended to provide the guidelines for design & development of APIs at adidas.
 
-Adidas is not responsible for the usage of this software for different purposes that the ones described in the use cases.
+Adidas is not responsible for the usage of this software for different purposes than the ones described in the use cases.
 
 ## Last Review
 
@@ -87,6 +87,6 @@ February 2025
 
 adidas AG publishes this software and accompanied documentation (if any) subject to the terms of the MIT license with the aim of helping the community with our tools and libraries which we think can be also useful for other people. You will find a copy of the MIT license in the root folder of this package. All rights not explicitly granted to you under the MIT license remain the sole and exclusive property of adidas AG.
 
-NOTICE: The software has been designed solely for the purpose of providing API design and development guidelines. The software is NOT designed, tested or verified for productive use whatsoever, nor or for any use related to high-risk environments, such as health care, highly or fully autonomous driving, power plants, or other critical infrastructures or services.
+NOTICE: The software has been designed solely for the purpose of providing API design and development guidelines. The software is NOT designed, tested or verified for productive use whatsoever, nor for any use related to high-risk environments, such as health care, highly or fully autonomous driving, power plants, or other critical infrastructures or services.
 
 For further information open the [adidas terms and conditions](https://github.com/adidas/adidas-contribution-guidelines/wiki/Terms-and-conditions) page.

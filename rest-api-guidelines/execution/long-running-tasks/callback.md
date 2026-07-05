@@ -14,7 +14,7 @@ If the chosen way is based on using callbacks, the response to such an asynchron
 
 ## Subscription
 
-The subscriber enrolls to specfic notifications. The subscriber resource **MUST** provide the information about the callback URL. Any data needed to require the execution of a task **MUST** be included in the request body.
+The subscriber enrolls to specific notifications. The subscriber resource **MUST** provide the information about the callback URL. Any data needed to require the execution of a task **MUST** be included in the request body.
 
 The subscription is created by using the HTTP POST Request Method. It **SHOULD** be designed as follows:
 
